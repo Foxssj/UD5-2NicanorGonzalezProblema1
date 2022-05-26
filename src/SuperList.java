@@ -13,23 +13,31 @@ showReversedElements(): Debe mostrar por pantalla cada elemento de la lista en e
 * inverso al que fue insertado seguido de un salto de línea.
 
         * */
+
+
         @Override
         public void addElement(Object element) {
-
+                list.add(element);
         }
 
         @Override
         public Object removeElement(int position) {
+                list.remove(position);
                 return null;
         }
 
         @Override
         public void showElements() {
-
+                for (int i = 0; i < list.size(); i++) {
+                        System.out.println(list.get(i));
+                }
         }
 
         @Override
         public void showReversedElements() {
+                for (int i = (list.size() - 1); i > -1; i--) {
+                        System.out.println(list.get(i));
 
+                }
         }
 }
