@@ -16,8 +16,9 @@ public class Main {
         lista.addElement(15);
         lista.addElement(45);
 
-        lista.removeElement(3);
+        System.out.println("Se ha eliminado el objeto:" + lista.removeElement(3));
 
+        System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
         lista.showElements();
         System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
         lista.showReversedElements();

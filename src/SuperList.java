@@ -24,8 +24,8 @@ showReversedElements(): Debe mostrar por pantalla cada elemento de la lista en e
 
         @Override
         public Object removeElement(int position) {
-                list.remove(position);
-                return null;
+                Object removedElement = list.remove(position);
+                return removedElement;
         }
 
         @Override
