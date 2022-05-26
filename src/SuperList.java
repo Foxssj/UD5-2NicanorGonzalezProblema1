@@ -1,3 +1,5 @@
+import java.util.Iterator;
+
 public class SuperList extends ListManager{
 
         /*
@@ -28,8 +30,11 @@ showReversedElements(): Debe mostrar por pantalla cada elemento de la lista en e
 
         @Override
         public void showElements() {
-                for (int i = 0; i < list.size(); i++) {
-                        System.out.println(list.get(i));
+
+                Iterator<Object> it = list.iterator();
+
+                while (it.hasNext()) {
+                        System.out.println(it.next());
                 }
         }
 
